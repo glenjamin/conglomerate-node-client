@@ -13,12 +13,6 @@ You can now use the scripts below
 
 ### Jobs
 
-Comes in two flavours:
-
-`./jobs-get.js`
-
-Reads one message, converts the markdown and acknowledges.
-
 `./jobs-consume.js`
 
 Continually reads one message at a time, converts markdown and acknowledges.
