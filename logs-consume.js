@@ -11,6 +11,8 @@ require('./connect')(function(amqp) {
 })
 
 function queueReady(q) {
+    console.warn("Bound to key %s", key);
+
     q.subscribe({ack: false}, onMessage);
     function onMessage(msg, headers, info) {
         console.log(JSON.stringify(msg));
