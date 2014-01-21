@@ -5,7 +5,7 @@ var username = process.argv[3];
 var message = process.argv.slice(4).join(" ");
 
 if (!room || !username || !message) {
-    console.warn("Usage: node chat-publish.js <room> <username> <message>");
+    console.warn("Usage: node chat-publish.js <room> <username> <message...>");
     process.exit(1);
 }
 
